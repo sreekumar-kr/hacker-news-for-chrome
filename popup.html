@@ -93,7 +93,7 @@
 	<link href="style.css" rel="stylesheet" type="text/css"/>
 	<style>
 	  body {overflow: hidden;}
-		#container, #spinner {width:350px;}
+		#container, #spinner {width:600px;}
 	</style>
 </head>
 <body onload="main();">
@@ -104,18 +104,18 @@
 		<div id="header">
 			<img src="icon18.gif">
 			<a id="title" href="http://news.ycombinator.com">Hacker News</a>
-			<span>|</span>
-			<a id="submitLink" href="javascript:submitCurrentTab()">Submit Current Page</a>
+			<span>|</span>			<span>			Links for the intellectually curious.</span>
+
 		</div>
 		<div id="search">
-      <input type="text" id="searchbox" name="searchbox" placeholder="search hacker news..." onkeypress="searchOnEnter(event)" />
+      <input type="text" id="searchbox" name="searchbox" placeholder="Search..." onkeypress="searchOnEnter(event)" />
       <input type="submit" id="searchbutton" value="search" />
 		</div>
 		<table id="feed" cellspacing="3" cellpadding="0">
 		</table>
 		<div id="footer">
-			<div class="right">
-				<a href="http://github.com/johnmichel/hacker-news-for-chrome/issues" id="issues">Issues?</a> | <a href="javascript:refreshLinks()" id="refresh">Refresh</a> | <a href="javascript:openOptions()" id="options">Options</a>
+			<div class="right">			<a id="submitLink" href="javascript:submitCurrentTab()">Submit Current Page</a> |
+				<a href="https://github.com/sreekumar-kr/hacker-news-for-chrome/issues" id="issues">Issues</a> | <a href="javascript:refreshLinks()" id="refresh">  Refresh </a> | <a href="javascript:openOptions()" id="options">Settings</a><br><br>
 			</div>
 		</div>
 	</div>
