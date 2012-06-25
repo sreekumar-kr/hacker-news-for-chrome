@@ -5,6 +5,7 @@ var buildPopupAfterResponse = false;
 var OnFeedSuccess = null;
 var OnFeedFail = null;
 var retryMilliseconds = 120000;
+var timeout=10000;
 
 function SetInitialOption(key, value) {
 	if (localStorage[key] == null) {
@@ -74,6 +75,7 @@ function DebugMessage(message) {
 function ShowLinkNotification(link) {
   var notification = webkitNotifications.createHTMLNotification("notification.html");
   notification.show();
+  setTimeout(function(){notification.cancel()}, timeout);
 }
 
 function handleError() {
